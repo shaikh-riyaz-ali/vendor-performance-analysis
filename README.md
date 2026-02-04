@@ -1,33 +1,59 @@
-# Vendor Performance Analysis
+Vendor Performance Analysis
 
-This project analyzes vendor performance using Python, SQL, and Power BI to identify profitable vendors, slow-moving inventory, and sales trends for business decision-making.
+This project analyzes vendor performance using Python, SQL, and Power BI to help businesses identify profitable vendors, slow-moving inventory, and sales trends for data-driven decision making.
 
-## 🛠️ Tools Used
-- Python (Pandas, NumPy, Matplotlib)
-- SQL Server / SQLite
-- Power BI
-- Jupyter Notebook
+Objective
 
-## 🔄 Project Workflow
-1. Ingested raw CSV files into database using Python.
-2. Cleaned and transformed data using Pandas and SQL.
-3. Built a consolidated table `vendor_sales_summary`.
-4. Created KPIs such as Profit Margin, Stock Turnover, and Sales-to-Purchase Ratio.
-5. Designed an interactive Power BI dashboard for business insights.
+Evaluate vendor performance based on purchase, sales, and freight data
 
-## 📊 Key Business Insights
-- Identified **$2.71M** in slow-moving inventory.
-- Top 10 vendors contribute **65.7%** of total purchases.
-- Highlighted low-performing vendors and brands.
-- Helped stakeholders improve purchasing strategy.
+Identify high-performing and low-performing vendors
 
-## 📁 Repository Structure
-- `data/` → Raw CSV files  
-- `scripts/` → Python ingestion & transformation scripts  
-- `notebooks/` → EDA and analysis notebooks  
-- `vendor_performance.pbix` → Power BI dashboard  
-- `Vendor Performance Report.pdf` → Business report  
+Support inventory and procurement decisions
 
----
-**Author:** Shaikh Riyaz Ali  
-**Role:** Data Analyst  
+Tech Stack
+
+Python (Pandas, NumPy, Matplotlib)
+
+SQL Server
+
+Power BI
+
+Jupyter Notebook
+
+Project Workflow
+
+Data Ingestion
+
+Loaded multiple CSV files into SQL Server using Python scripts
+
+Data Cleaning & Transformation
+
+Handled missing values, duplicates, and incorrect formats
+
+Performed joins across multiple tables
+
+Exploratory Data Analysis (EDA)
+
+Analyzed sales trends, vendor performance, and inventory movement
+
+SQL Analysis
+
+Created summary tables for vendor sales and freight costs
+
+Power BI Dashboard
+
+Built interactive visuals for vendor performance insights
+
+Files in this Repository
+
+ingestion_db.py – Loads CSV data into SQL Server
+
+get_vendor_summary.py – Generates vendor performance summary
+
+Exploratory Data Analysis.ipynb – Data exploration notebook
+
+Vendor Performance Analysis.ipynb – Final analysis notebook
+
+vendor_performance.pbix – Power BI dashboard
+
+sample_sales.csv – Sample dataset
